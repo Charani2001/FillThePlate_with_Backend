@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    android:paddingTop="170dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:paddingTop="32dp"
+        tools:context=".DonateFoods">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="64dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.059"
+            app:srcCompat="@drawable/ic_donate" />
+
+        <TextView
+            android:id="@+id/donorInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:text="Donor Information"
+            android:textColor="@color/brown"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullNameLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:boxStrokeColor="@color/brown"
+            app:cursorColor="@color/brown"
+            app:helperTextTextColor="@color/brown"
+            app:placeholderTextColor="@color/brown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/donorInfoTitle">
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:shadowColor="@color/brown"
+                android:textColor="@color/brown"
+                android:textColorHighlight="@color/brown"
+                android:textColorHint="@color/brown"
+                android:textColorLink="@color/brown" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contactNumberLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:boxStrokeColor="@color/brown"
+            app:cursorColor="@color/brown"
+            app:helperTextTextColor="@color/brown"
+            app:placeholderTextColor="@color/brown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fullNameLayout">
+
+            <EditText
+                android:id="@+id/contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Number"
+                android:inputType="phone"
+                android:shadowColor="@color/brown"
+                android:textColor="@color/brown"
+                android:textColorHighlight="@color/brown"
+                android:textColorHint="@color/brown"
+                android:textColorLink="@color/brown" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailAddressLayout"
+            android:layout_width="0dp"
+            app:boxStrokeColor="@color/brown"
+            app:cursorColor="@color/brown"
+            app:helperTextTextColor="@color/brown"
+            app:placeholderTextColor="@color/brown"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contactNumberLayout">
+
+            <EditText
+                android:id="@+id/emailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:shadowColor="@color/brown"
+                android:textColor="@color/brown"
+                android:textColorHighlight="@color/brown"
+                android:textColorHint="@color/brown"
+                android:textColorLink="@color/brown"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addressLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:boxStrokeColor="@color/brown"
+            app:cursorColor="@color/brown"
+            app:helperTextTextColor="@color/brown"
+            app:placeholderTextColor="@color/brown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailAddressLayout">
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="textMultiLine"
+                android:shadowColor="@color/brown"
+                android:textColor="@color/brown"
+                android:textColorHighlight="@color/brown"
+                android:textColorHint="@color/brown"
+                android:textColorLink="@color/brown"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Spinner
+            android:id="@+id/foodCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:boxStrokeColor="@color/brown"
+            app:cursorColor="@color/brown"
+            app:helperTextTextColor="@color/brown"
+            app:placeholderTextColor="@color/brown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:entries="@array/food_categories"
+            app:layout_constraintTop_toBottomOf="@id/addressLayout"
+            android:shadowColor="@color/brown"
+            android:textColor="@color/brown"
+            android:textColorHighlight="@color/brown"
+            android:textColorHint="@color/brown"
+            android:textColorLink="@color/brown"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/foodItemNameLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:boxStrokeColor="@color/brown"
+            app:cursorColor="@color/brown"
+            app:helperTextTextColor="@color/brown"
+            app:placeholderTextColor="@color/brown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodCategory">
+
+            <EditText
+                android:id="@+id/foodItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Food Item Name"
+                android:inputType="text"
+                android:shadowColor="@color/brown"
+                android:textColor="@color/brown"
+                android:textColorHighlight="@color/brown"
+                android:textColorHint="@color/brown"
+                android:textColorLink="@color/brown"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/savingsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:boxStrokeColor="@color/brown"
+            app:cursorColor="@color/brown"
+            app:helperTextTextColor="@color/brown"
+            app:placeholderTextColor="@color/brown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodItemNameLayout">
+
+            <EditText
+                android:id="@+id/savings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Servings"
+                android:inputType="numberDecimal"
+                android:shadowColor="@color/brown"
+                android:textColor="@color/brown"
+                android:textColorHighlight="@color/brown"
+                android:textColorHint="@color/brown"
+                android:textColorLink="@color/brown"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/foodImagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="6dp"
+            app:boxStrokeColor="@color/brown"
+            app:cursorColor="@color/brown"
+            app:helperTextTextColor="@color/brown"
+            app:placeholderTextColor="@color/brown"
+            app:layout_constraintTop_toBottomOf="@id/savingsLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <!-- Pickup Location -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pickupLocationLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:boxStrokeColor="@color/brown"
+            app:cursorColor="@color/brown"
+            app:helperTextTextColor="@color/brown"
+            app:placeholderTextColor="@color/brown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodImagePreview">
+
+            <EditText
+                android:id="@+id/pickupLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pickup Location"
+                android:inputType="text"
+                android:shadowColor="@color/brown"
+                android:textColor="@color/brown"
+                android:textColorHighlight="@color/brown"
+                android:textColorHint="@color/brown"
+                android:textColorLink="@color/brown"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/green"
+            android:text="Submit"
+            android:textColor="@color/cream"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pickupLocationLayout" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

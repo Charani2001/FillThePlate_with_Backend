@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_food_details"
+        android:icon="@drawable/menu"
+        android:title="Foods"/>
+
+    <item
+        android:id="@+id/nav_donate"
+        android:icon="@drawable/ic_donate"
+        android:title="Donate"/>
+
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+
+    <item
+        android:id="@+id/nav_get_foods"
+        android:icon="@drawable/tray"
+        android:title="Get"/>
+
+    <item
+        android:id="@+id/nav_request_status"
+        android:icon="@drawable/ic_status"
+        android:title="Status"/>
+
+
+
+</menu>

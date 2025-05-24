@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- EditTextPreference to input the backend URL -->
+    <EditTextPreference
+        android:key="backend_url"
+        android:title="Backend URL"
+        android:summary="Enter the base URL of your backend server"
+        android:defaultValue="http://10.0.2.2:5000"
+        android:inputType="textUri"
+        android:hint="http://your.backend.url"
+        android:singleLine="true" />
+
+</PreferenceScreen>
